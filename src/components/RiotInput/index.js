@@ -23,14 +23,7 @@ export default function RiotInput(props) {
       setType('text');
     }
   }
-
-  function setCursorToFinal() {
-    const pos = inputRef.current.value.length;
-    console.log(pos);
-    inputRef.current.focus();
-    inputRef.current.setSelectionRange(pos, pos);
-  }
-
+  
   return (
     <RiotContainer behavior={behavior}>
       <input
