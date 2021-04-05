@@ -12,7 +12,7 @@ export const Container = styled.div`
 `;
 
 export const Window = styled.div`
-  width: 76%;
+  width: 85%;
   height: 80%;
 
   min-width: 700px;
@@ -21,6 +21,7 @@ export const Window = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  background-color: #f5f5f5;
 
   .config {
     position: absolute;
@@ -162,6 +163,56 @@ export const Form = styled.form`
       top: 5px;
     }
   }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+
+    button {
+      width: calc(100% / 3 - 6px);
+      border-radius: 4px;
+      border: none;
+      background-color: #333;
+      margin: 0;
+      padding: 7px 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &.facebook {
+        background-color: #1977f3;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &.google {
+        background-color: #fff;
+        border: 1px solid #ddd;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &.apple {
+        background-color: #000;
+
+        
+        img {
+          width: 18px;
+          height: 23px;
+        }
+      }
+    }
+  }
+
   .check-box {
     display: flex;
     justify-content: flex-start;
@@ -225,7 +276,7 @@ export const Form = styled.form`
   }
 
   button {
-    margin: 100px 0;
+    margin: 70px 0;
     background: transparent;
     padding: 13px 15px;
     border-radius: 20px;

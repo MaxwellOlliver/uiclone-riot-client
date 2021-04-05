@@ -6,6 +6,9 @@ import { Container, Form, Window } from './styles.js';
 
 import icon from '../../assets/league-icon.png';
 import RiotInput from '../../components/RiotInput/index.js';
+import Facebook from '../../assets/facebook-logo.png'
+import Google from '../../assets/google-logo.png'
+import Apple from '../../assets/apple-logo.png'
 
 export default function SignIn(props) {
   const [username, setUsername] = useState(false);
@@ -45,6 +48,17 @@ export default function SignIn(props) {
             stateSetter={setPass}
             isValid={!!pass}
           />
+          <div className="row">
+            <button class="facebook">
+              <img src={Facebook} alt="facebook logo"/>
+            </button>
+            <button class="google">
+              <img src={Google} alt="google logo"/>
+            </button>
+            <button class="apple">
+              <img src={Apple} alt="apple logo"/>
+            </button>
+          </div>
           <div className="check-box">
             <input type="checkbox" name="check" id="check" />
             <label htmlFor="check">
@@ -63,7 +77,7 @@ export default function SignIn(props) {
           <footer>
             <span>NÃO CONSEGUE CRIAR SESSÃO?</span>
             <span>CRIAR CONTA</span>
-            <span id="v">v20.22.10</span>
+            <span id="v">v28.0.1</span>
           </footer>
         </Form>
         <div className="side-img">
